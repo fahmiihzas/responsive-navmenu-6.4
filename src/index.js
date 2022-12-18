@@ -9,7 +9,9 @@ import {
 } from "react-router-dom";
 import Home from './routes/Home'
 import About from './routes/About'
+import Contact from './routes/Contact'
 import Navbar from './components/Navbar'
+
 import ErrorPage from "./routes/ErrorPages"
 import './App.css'
 
@@ -27,14 +29,22 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     errorElement: <ErrorPage />,
     children: [
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "github-pages",
+        element: <Contact />,
+      },
     ]
 }
 ]);

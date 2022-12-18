@@ -6,7 +6,9 @@
   
   .navbar {
     background: #19191a;
-    height: 80px;
+    border-radius: 25px;
+    margin: 15px 100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +21,7 @@
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
   }
   
   .container {
@@ -40,6 +42,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    margin-right: 10px;
   }
   
   .navbar-icon {
@@ -56,7 +59,7 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 60px;
     border-bottom: 2px solid transparent;
   }
   
@@ -84,10 +87,41 @@
   .menu-icon {
     display: none;
   }
+
+  .button {
+    border-radius: 25px;
+    background: #09bef0;
+    padding: 10px 27px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+
+  .button:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
   
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 700px) {
     .NavbarItems {
       position: relative;
+    }
+
+    .button {
+      display: block;
+      margin-left: 0px;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-left: 27px;
+    }
+
+    .button:hover {
+      display: block;
     }
   
     .nav-menu {
@@ -95,13 +129,14 @@
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 80px;
+      top: 65px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
     }
   
     .nav-menu.active {
+      border-radius: 25px;
       background: #19191a;
       left: 0;
       opacity: 1;
@@ -111,7 +146,7 @@
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
       width: 100%;
       display: table;
     }

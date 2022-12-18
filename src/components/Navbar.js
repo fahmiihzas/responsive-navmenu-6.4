@@ -36,6 +36,7 @@ function Navbar() {
                   Home
                 </NavLink>
               </li>
+
               <li className="nav-item">
                 <NavLink
                   to="/about"
@@ -47,6 +48,7 @@ function Navbar() {
                   About
                 </NavLink>
               </li>
+
               <li className="nav-item">
                 <NavLink
                   to="/contact"
@@ -58,8 +60,15 @@ function Navbar() {
                   Contact
                 </NavLink>
               </li>
+
+              <li onClick={closeMobileMenu}>
+                <a href="https://github.com/fahmiihzas"  className=" nav-item nav-links button">Github</a>
+              </li>
             </ul>
+            
           </div>
+          
+          {/* className="navbar-logo" */}
         </nav>
       </IconContext.Provider>
     </>
