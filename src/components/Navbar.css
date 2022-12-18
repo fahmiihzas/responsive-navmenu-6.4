@@ -166,9 +166,8 @@
   
     .navbar-logo {
       position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
+      top: 20%;
+      left: 6%;
     }
   
     .menu-icon {
