@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { GiAmmoniteFossil } from "react-icons/gi";
+import { GiAbstract028 } from "react-icons/gi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
+import { BsFillEyeFill } from "react-icons/bs";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -18,8 +18,8 @@ function Navbar() {
         <nav className="navbar">
           <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <GiAmmoniteFossil className="navbar-icon" />
-              Fahmi
+              <GiAbstract028 className="navbar-icon" />
+              fahmiihzas
             </Link>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -51,18 +51,18 @@ function Navbar() {
 
               <li className="nav-item">
                 <NavLink
-                  to="/contact"
+                  to="/experience"
                   className={({ isActive }) =>
                     "nav-links" + (isActive ? " activated" : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  Contact
+                  Experience
                 </NavLink>
               </li>
 
               <li onClick={closeMobileMenu}>
-                <a href="https://github.com/fahmiihzas"  className=" nav-item nav-links button">Github</a>
+                <a href="https://fahmiihzaslink.vercel.app/"  className=" nav-item nav-links button">Contact Me</a>
               </li>
             </ul>
             
