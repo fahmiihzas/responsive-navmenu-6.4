@@ -91,6 +91,7 @@
     border-radius: 25px;
     background: #09bef0;
     padding: 10px 27px;
+    max-height: 40px;
     color: #fff;
     outline: none;
     border: none;
@@ -165,8 +166,12 @@
   
     .navbar-logo {
       position: absolute;
-      top: 15%;
+      top: 19%;
       left: 6%;
+    }
+
+    .texticon {
+      font-size: 1.8rem;
     }
   
     .menu-icon {
